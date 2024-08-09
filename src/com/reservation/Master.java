@@ -25,9 +25,9 @@ class Master{
             ch = sc.nextInt();
             if(ch==1){
                 Booking book = new Booking();
-                bookings.add(book);
 
                 if(book.isAvailable(buses, bookings)){
+                    bookings.add(book);
                     System.out.println("\nYour Booking is Confirmed!! HAPPY JOURNEY!!");
                 }
                 else{
